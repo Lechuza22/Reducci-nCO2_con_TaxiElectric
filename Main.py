@@ -9,8 +9,8 @@ from sklearn.model_selection import train_test_split
 @st.cache_data
 def load_data():
     locacion_y_coordenadas = pd.read_csv('LocacionYcoordenadas.csv')
-    yellow_trip_data = pd.read_csv('viajes_taxis_Amarilo_reducido.csv')
-    vehicle_fuel_economy = pd.read_csv('Vehicle_Fuel_Data_Updated.csv')
+    yellow_trip_data = pd.read_csv('Yellow_Tripdata_2024-10_r_24mb.csv')
+    vehicle_fuel_economy = pd.read_csv('transformed_Vehicle Fuel Economy Data.csv')
     return locacion_y_coordenadas, yellow_trip_data, vehicle_fuel_economy
 
 locacion_y_coordenadas, yellow_trip_data, vehicle_fuel_economy = load_data()
